@@ -220,7 +220,20 @@ namespace Kursov_Database.Forms.AdminFormsGears
             }
         }
 
-   
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NumberTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

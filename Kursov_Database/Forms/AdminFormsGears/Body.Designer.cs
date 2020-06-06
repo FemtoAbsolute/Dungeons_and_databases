@@ -29,39 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Body));
-            this.AllGearsTable = new System.Windows.Forms.DataGridView();
             this.MainFormElipse = new Guna.UI.WinForms.GunaElipse(this.components);
             this.CollapseButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.CloseButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.TopPanelDragControl = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.NumberTextbox = new System.Windows.Forms.TextBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.NameTextbox = new System.Windows.Forms.TextBox();
             this.AddGearButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.NameTextbox = new System.Windows.Forms.TextBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.NumberTextbox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.AllGearsTable = new System.Windows.Forms.DataGridView();
             this.ChangeButton = new Guna.UI.WinForms.GunaAdvenceButton();
-            ((System.ComponentModel.ISupportInitialize)(this.AllGearsTable)).BeginInit();
             this.TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AllGearsTable)).BeginInit();
             this.SuspendLayout();
-            // 
-            // AllGearsTable
-            // 
-            this.AllGearsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.AllGearsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.AllGearsTable.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.AllGearsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AllGearsTable.Location = new System.Drawing.Point(12, 41);
-            this.AllGearsTable.Name = "AllGearsTable";
-            this.AllGearsTable.ReadOnly = true;
-            this.AllGearsTable.Size = new System.Drawing.Size(418, 101);
-            this.AllGearsTable.TabIndex = 37;
-            this.AllGearsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
             // MainFormElipse
             // 
@@ -86,7 +74,7 @@
             this.CollapseButton.Image = null;
             this.CollapseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CollapseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CollapseButton.Location = new System.Drawing.Point(388, 12);
+            this.CollapseButton.Location = new System.Drawing.Point(552, 12);
             this.CollapseButton.Name = "CollapseButton";
             this.CollapseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CollapseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -118,7 +106,7 @@
             this.CloseButton.Image = null;
             this.CloseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CloseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CloseButton.Location = new System.Drawing.Point(412, 12);
+            this.CloseButton.Location = new System.Drawing.Point(576, 12);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CloseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -139,94 +127,22 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(443, 35);
+            this.TopPanel.Size = new System.Drawing.Size(606, 35);
             this.TopPanel.TabIndex = 38;
             // 
             // TopPanelDragControl
             // 
             this.TopPanelDragControl.TargetControl = this.TopPanel;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(321, 203);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 18);
-            this.label6.TabIndex = 47;
-            this.label6.Text = "Gearscore";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(164, 203);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 18);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "Классы";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(9, 203);
+            this.label4.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(8, 268);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 18);
+            this.label4.Size = new System.Drawing.Size(49, 23);
             this.label4.TabIndex = 45;
             this.label4.Text = "Тип";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(14, 156);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 18);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Название";
-            // 
-            // NumberTextbox
-            // 
-            this.NumberTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NumberTextbox.Location = new System.Drawing.Point(321, 224);
-            this.NumberTextbox.Multiline = true;
-            this.NumberTextbox.Name = "NumberTextbox";
-            this.NumberTextbox.Size = new System.Drawing.Size(109, 64);
-            this.NumberTextbox.TabIndex = 43;
-            // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(167, 224);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.ScrollAlwaysVisible = true;
-            this.checkedListBox2.Size = new System.Drawing.Size(148, 64);
-            this.checkedListBox2.TabIndex = 42;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Ткань",
-            "Кожа",
-            "Кольчуга",
-            "Латы"});
-            this.checkedListBox1.Location = new System.Drawing.Point(12, 224);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.ScrollAlwaysVisible = true;
-            this.checkedListBox1.Size = new System.Drawing.Size(149, 64);
-            this.checkedListBox1.TabIndex = 41;
-            this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ItemCheck);
-            // 
-            // NameTextbox
-            // 
-            this.NameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameTextbox.Location = new System.Drawing.Point(111, 148);
-            this.NameTextbox.Multiline = true;
-            this.NameTextbox.Name = "NameTextbox";
-            this.NameTextbox.Size = new System.Drawing.Size(319, 36);
-            this.NameTextbox.TabIndex = 40;
             // 
             // AddGearButton
             // 
@@ -241,12 +157,12 @@
             this.AddGearButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.AddGearButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddGearButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddGearButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AddGearButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddGearButton.ForeColor = System.Drawing.Color.Black;
             this.AddGearButton.Image = null;
             this.AddGearButton.ImageSize = new System.Drawing.Size(20, 20);
             this.AddGearButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.AddGearButton.Location = new System.Drawing.Point(12, 294);
+            this.AddGearButton.Location = new System.Drawing.Point(6, 409);
             this.AddGearButton.Name = "AddGearButton";
             this.AddGearButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.AddGearButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -254,11 +170,109 @@
             this.AddGearButton.OnHoverImage = null;
             this.AddGearButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.AddGearButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddGearButton.Size = new System.Drawing.Size(415, 31);
+            this.AddGearButton.Size = new System.Drawing.Size(594, 54);
             this.AddGearButton.TabIndex = 39;
             this.AddGearButton.Text = "Добавить снаряжение";
             this.AddGearButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.AddGearButton.Click += new System.EventHandler(this.AddGearButton_Click_1);
+            // 
+            // NameTextbox
+            // 
+            this.NameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameTextbox.Location = new System.Drawing.Point(132, 219);
+            this.NameTextbox.Multiline = true;
+            this.NameTextbox.Name = "NameTextbox";
+            this.NameTextbox.Size = new System.Drawing.Size(468, 36);
+            this.NameTextbox.TabIndex = 40;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Ткань",
+            "Кожа",
+            "Кольчуга",
+            "Латы"});
+            this.checkedListBox1.Location = new System.Drawing.Point(6, 294);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.ScrollAlwaysVisible = true;
+            this.checkedListBox1.Size = new System.Drawing.Size(213, 100);
+            this.checkedListBox1.TabIndex = 41;
+            this.checkedListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ItemCheck);
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Location = new System.Drawing.Point(225, 294);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.ScrollAlwaysVisible = true;
+            this.checkedListBox2.Size = new System.Drawing.Size(194, 100);
+            this.checkedListBox2.TabIndex = 42;
+            this.checkedListBox2.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
+            // 
+            // NumberTextbox
+            // 
+            this.NumberTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NumberTextbox.Location = new System.Drawing.Point(425, 294);
+            this.NumberTextbox.Multiline = true;
+            this.NumberTextbox.Name = "NumberTextbox";
+            this.NumberTextbox.Size = new System.Drawing.Size(175, 100);
+            this.NumberTextbox.TabIndex = 43;
+            this.NumberTextbox.TextChanged += new System.EventHandler(this.NumberTextbox_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(12, 219);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 23);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Название";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(221, 268);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 23);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "Классы";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(421, 268);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(127, 23);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Gearscore";
+            // 
+            // AllGearsTable
+            // 
+            this.AllGearsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AllGearsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.AllGearsTable.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.AllGearsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllGearsTable.DefaultCellStyle = dataGridViewCellStyle1;
+            this.AllGearsTable.Location = new System.Drawing.Point(12, 41);
+            this.AllGearsTable.Name = "AllGearsTable";
+            this.AllGearsTable.ReadOnly = true;
+            this.AllGearsTable.Size = new System.Drawing.Size(582, 172);
+            this.AllGearsTable.TabIndex = 37;
+            this.AllGearsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
             // ChangeButton
             // 
@@ -273,12 +287,12 @@
             this.ChangeButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.ChangeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ChangeButton.FocusedColor = System.Drawing.Color.Empty;
-            this.ChangeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ChangeButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeButton.ForeColor = System.Drawing.Color.Black;
             this.ChangeButton.Image = null;
             this.ChangeButton.ImageSize = new System.Drawing.Size(20, 20);
             this.ChangeButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.ChangeButton.Location = new System.Drawing.Point(12, 331);
+            this.ChangeButton.Location = new System.Drawing.Point(6, 469);
             this.ChangeButton.Name = "ChangeButton";
             this.ChangeButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.ChangeButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -286,7 +300,7 @@
             this.ChangeButton.OnHoverImage = null;
             this.ChangeButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.ChangeButton.OnPressedColor = System.Drawing.Color.Black;
-            this.ChangeButton.Size = new System.Drawing.Size(415, 31);
+            this.ChangeButton.Size = new System.Drawing.Size(594, 54);
             this.ChangeButton.TabIndex = 48;
             this.ChangeButton.Text = "Изменить выбранную запись";
             this.ChangeButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -296,7 +310,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 369);
+            this.ClientSize = new System.Drawing.Size(606, 529);
             this.Controls.Add(this.ChangeButton);
             this.Controls.Add(this.AllGearsTable);
             this.Controls.Add(this.TopPanel);
@@ -313,21 +327,21 @@
             this.Name = "Body";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Body";
-            ((System.ComponentModel.ISupportInitialize)(this.AllGearsTable)).EndInit();
             this.TopPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AllGearsTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView AllGearsTable;
         private Guna.UI.WinForms.GunaElipse MainFormElipse;
         private Guna.UI.WinForms.GunaAdvenceButton CollapseButton;
         private Guna.UI.WinForms.GunaAdvenceButton CloseButton;
         private System.Windows.Forms.Panel TopPanel;
         private Guna.UI.WinForms.GunaDragControl TopPanelDragControl;
+        private Guna.UI.WinForms.GunaAdvenceButton ChangeButton;
+        private System.Windows.Forms.DataGridView AllGearsTable;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -337,6 +351,5 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.TextBox NameTextbox;
         private Guna.UI.WinForms.GunaAdvenceButton AddGearButton;
-        private Guna.UI.WinForms.GunaAdvenceButton ChangeButton;
     }
 }

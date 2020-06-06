@@ -187,23 +187,23 @@
     <Compile Include="Forms\AdminForms\Talents.Designer.cs">
       <DependentUpon>Talents.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CharacterCreate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CharacterCreate.Designer.cs">
-      <DependentUpon>CharacterCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\CharactersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CharactersForm.Designer.cs">
-      <DependentUpon>CharactersForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForms\PlayerCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForms\PlayerCreateForm.Designer.cs">
+      <DependentUpon>PlayerCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PlayerForms\PlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerForms\PlayerForm.Designer.cs">
+      <DependentUpon>PlayerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -252,11 +252,14 @@
     <EmbeddedResource Include="Forms\AdminForms\Talents.resx">
       <DependentUpon>Talents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CharacterCreate.resx">
-      <DependentUpon>CharacterCreate.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForms\PlayerCreateForm.resx">
+      <DependentUpon>PlayerCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerForms\PlayerForm.resx">
+      <DependentUpon>PlayerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -342,6 +345,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\unnamed %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseKingdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SessionImperium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CafedrAllianse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeroDefaultTR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeroDefault copy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeroDefault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CareHair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LongHair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TailHairt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attac.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Protec.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

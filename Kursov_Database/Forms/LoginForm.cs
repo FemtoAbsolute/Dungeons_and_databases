@@ -13,11 +13,11 @@ namespace Kursov_Database
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (PasswordTextbox.Text == "123" && LoginTextbox.Text == "Player")
+            if (PasswordTextbox.Text == "player" && LoginTextbox.Text == "player")
             {
                 this.Hide();
-                Kursov_Database.CharactersForm CharactersForm = new Kursov_Database.CharactersForm();
-                CharactersForm.ShowDialog();
+                Kursov_Database.Forms.PlayerForms.PlayerForm PlayerForm = new Kursov_Database.Forms.PlayerForms.PlayerForm();
+                PlayerForm.ShowDialog();
                 this.Show();
             }
             else if (PasswordTextbox.Text == "admin" && LoginTextbox.Text == "admin")

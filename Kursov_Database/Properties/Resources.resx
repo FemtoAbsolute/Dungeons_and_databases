@@ -127,6 +127,24 @@
   <data name="artworks_000465359268_o7fs90_t500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\artworks-000465359268-o7fs90-t500x500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Attac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Attac.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseKingdom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BaseKingdom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CafedrAllianse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CafedrAllianse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CareHair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CareHair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeroDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeroDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeroDefault_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HeroDefault copy.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hqdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hqdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,6 +168,18 @@
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LongHair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LongHair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Protec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Protec.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SessionImperium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SessionImperium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TailHairt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TailHairt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unnamed__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
