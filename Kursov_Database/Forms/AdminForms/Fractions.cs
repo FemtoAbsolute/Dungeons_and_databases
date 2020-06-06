@@ -59,6 +59,7 @@ namespace Kursov_Database.Forms.AdminForms
             Adapter = new MySqlDataAdapter("select `Name` from `kursach_database`.fraction;", Connection);
             Adapter.Fill(Table);
             AllFractionsTable.DataSource = Table;
+            AllFractionsTable.Columns[0].HeaderText = "Название фракций";
         }
 
 

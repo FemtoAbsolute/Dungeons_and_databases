@@ -18,7 +18,7 @@ namespace Kursov_Database.Forms.AdminForms
         {
             InitializeComponent();
             ConnectToDatabase("root", "root");
-            ShowAllPerks();
+            RefreshAchievementTable();
             DisconnectFromDatabase();
         }
         private bool ConnectToDatabase(string Login, string Password)
@@ -51,15 +51,7 @@ namespace Kursov_Database.Forms.AdminForms
             }
             return true;
         }
-        void ShowAllPerks()
-        {
-            DataTable Table = new DataTable();
-            MySqlDataAdapter Adapter;
-            Table = new DataTable();
-            Adapter = new MySqlDataAdapter("select `nameofachievement` from `kursach_database`.Achievementlist;", Connection);
-            Adapter.Fill(Table);
-            AllAchievmentsTable.DataSource = Table;
-        }
+   
         void RefreshAchievementTable()
         {
             DataTable Table = new DataTable();
@@ -70,6 +62,7 @@ namespace Kursov_Database.Forms.AdminForms
             Adapter = new MySqlDataAdapter("select nameofachievement from Achievementlist;", Connection);
             Adapter.Fill(Table);
             AllAchievmentsTable.DataSource = Table;
+            AllAchievmentsTable.Columns[0].HeaderText = "Название достижения";
             DisconnectFromDatabase();
         }
 

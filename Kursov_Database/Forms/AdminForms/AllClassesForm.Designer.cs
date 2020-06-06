@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllClassesForm));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.CollapseButton = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -46,6 +48,7 @@
             this.ChoosePerksLabel = new System.Windows.Forms.Label();
             this.ClassInformationTextbox = new System.Windows.Forms.TextBox();
             this.ChangeClassButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ValueTextbox = new System.Windows.Forms.TextBox();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllClassesTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PerksOfClassTable)).BeginInit();
@@ -74,7 +77,7 @@
             this.CollapseButton.Image = null;
             this.CollapseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CollapseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CollapseButton.Location = new System.Drawing.Point(456, 12);
+            this.CollapseButton.Location = new System.Drawing.Point(570, 12);
             this.CollapseButton.Name = "CollapseButton";
             this.CollapseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CollapseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -106,7 +109,7 @@
             this.CloseButton.Image = null;
             this.CloseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CloseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CloseButton.Location = new System.Drawing.Point(480, 12);
+            this.CloseButton.Location = new System.Drawing.Point(594, 12);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CloseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -127,7 +130,7 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(512, 35);
+            this.TopPanel.Size = new System.Drawing.Size(624, 35);
             this.TopPanel.TabIndex = 3;
             // 
             // AllClassesTable
@@ -136,10 +139,18 @@
             this.AllClassesTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.AllClassesTable.BackgroundColor = System.Drawing.SystemColors.Control;
             this.AllClassesTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllClassesTable.DefaultCellStyle = dataGridViewCellStyle8;
             this.AllClassesTable.Location = new System.Drawing.Point(12, 41);
             this.AllClassesTable.Name = "AllClassesTable";
             this.AllClassesTable.ReadOnly = true;
-            this.AllClassesTable.Size = new System.Drawing.Size(243, 286);
+            this.AllClassesTable.Size = new System.Drawing.Size(310, 351);
             this.AllClassesTable.TabIndex = 4;
             this.AllClassesTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClickClass);
             // 
@@ -149,10 +160,18 @@
             this.PerksOfClassTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PerksOfClassTable.BackgroundColor = System.Drawing.SystemColors.Control;
             this.PerksOfClassTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PerksOfClassTable.Location = new System.Drawing.Point(258, 41);
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PerksOfClassTable.DefaultCellStyle = dataGridViewCellStyle7;
+            this.PerksOfClassTable.Location = new System.Drawing.Point(328, 41);
             this.PerksOfClassTable.Name = "PerksOfClassTable";
             this.PerksOfClassTable.ReadOnly = true;
-            this.PerksOfClassTable.Size = new System.Drawing.Size(240, 286);
+            this.PerksOfClassTable.Size = new System.Drawing.Size(284, 351);
             this.PerksOfClassTable.TabIndex = 5;
             this.PerksOfClassTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClickPerk);
             // 
@@ -169,12 +188,12 @@
             this.AddSaveClassButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.AddSaveClassButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddSaveClassButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddSaveClassButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AddSaveClassButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddSaveClassButton.ForeColor = System.Drawing.Color.Black;
             this.AddSaveClassButton.Image = null;
             this.AddSaveClassButton.ImageSize = new System.Drawing.Size(20, 20);
             this.AddSaveClassButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.AddSaveClassButton.Location = new System.Drawing.Point(278, 411);
+            this.AddSaveClassButton.Location = new System.Drawing.Point(328, 494);
             this.AddSaveClassButton.Name = "AddSaveClassButton";
             this.AddSaveClassButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.AddSaveClassButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -182,7 +201,7 @@
             this.AddSaveClassButton.OnHoverImage = null;
             this.AddSaveClassButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.AddSaveClassButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddSaveClassButton.Size = new System.Drawing.Size(220, 25);
+            this.AddSaveClassButton.Size = new System.Drawing.Size(284, 44);
             this.AddSaveClassButton.TabIndex = 6;
             this.AddSaveClassButton.Text = "Добавить класс";
             this.AddSaveClassButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -191,11 +210,11 @@
             // 
             // ClassNameTextbox
             // 
-            this.ClassNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ClassNameTextbox.Location = new System.Drawing.Point(12, 411);
+            this.ClassNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ClassNameTextbox.Location = new System.Drawing.Point(12, 494);
             this.ClassNameTextbox.Multiline = true;
             this.ClassNameTextbox.Name = "ClassNameTextbox";
-            this.ClassNameTextbox.Size = new System.Drawing.Size(245, 25);
+            this.ClassNameTextbox.Size = new System.Drawing.Size(312, 44);
             this.ClassNameTextbox.TabIndex = 7;
             this.ClassNameTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ClassNameTextbox.Visible = false;
@@ -213,12 +232,12 @@
             this.AddClassButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.AddClassButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddClassButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddClassButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AddClassButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddClassButton.ForeColor = System.Drawing.Color.Black;
             this.AddClassButton.Image = null;
             this.AddClassButton.ImageSize = new System.Drawing.Size(20, 20);
             this.AddClassButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.AddClassButton.Location = new System.Drawing.Point(12, 333);
+            this.AddClassButton.Location = new System.Drawing.Point(10, 398);
             this.AddClassButton.Name = "AddClassButton";
             this.AddClassButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.AddClassButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -226,7 +245,7 @@
             this.AddClassButton.OnHoverImage = null;
             this.AddClassButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.AddClassButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddClassButton.Size = new System.Drawing.Size(243, 54);
+            this.AddClassButton.Size = new System.Drawing.Size(312, 65);
             this.AddClassButton.TabIndex = 8;
             this.AddClassButton.Text = "Добавить новый класс";
             this.AddClassButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -245,12 +264,12 @@
             this.AddPerkButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.AddPerkButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddPerkButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddPerkButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AddPerkButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddPerkButton.ForeColor = System.Drawing.Color.Black;
             this.AddPerkButton.Image = null;
             this.AddPerkButton.ImageSize = new System.Drawing.Size(20, 20);
             this.AddPerkButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.AddPerkButton.Location = new System.Drawing.Point(258, 333);
+            this.AddPerkButton.Location = new System.Drawing.Point(328, 398);
             this.AddPerkButton.Name = "AddPerkButton";
             this.AddPerkButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.AddPerkButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -258,7 +277,7 @@
             this.AddPerkButton.OnHoverImage = null;
             this.AddPerkButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.AddPerkButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddPerkButton.Size = new System.Drawing.Size(240, 54);
+            this.AddPerkButton.Size = new System.Drawing.Size(284, 65);
             this.AddPerkButton.TabIndex = 9;
             this.AddPerkButton.Text = "Добавить перк классу";
             this.AddPerkButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -281,12 +300,12 @@
             this.SaveAddPerksButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.SaveAddPerksButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.SaveAddPerksButton.FocusedColor = System.Drawing.Color.Empty;
-            this.SaveAddPerksButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.SaveAddPerksButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SaveAddPerksButton.ForeColor = System.Drawing.Color.Black;
             this.SaveAddPerksButton.Image = null;
             this.SaveAddPerksButton.ImageSize = new System.Drawing.Size(20, 20);
             this.SaveAddPerksButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.SaveAddPerksButton.Location = new System.Drawing.Point(278, 411);
+            this.SaveAddPerksButton.Location = new System.Drawing.Point(328, 494);
             this.SaveAddPerksButton.Name = "SaveAddPerksButton";
             this.SaveAddPerksButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.SaveAddPerksButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -294,7 +313,7 @@
             this.SaveAddPerksButton.OnHoverImage = null;
             this.SaveAddPerksButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.SaveAddPerksButton.OnPressedColor = System.Drawing.Color.Black;
-            this.SaveAddPerksButton.Size = new System.Drawing.Size(220, 54);
+            this.SaveAddPerksButton.Size = new System.Drawing.Size(284, 98);
             this.SaveAddPerksButton.TabIndex = 10;
             this.SaveAddPerksButton.Text = "Добавить перк классу";
             this.SaveAddPerksButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -303,36 +322,38 @@
             // 
             // PerksComboBox
             // 
+            this.PerksComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PerksComboBox.FormattingEnabled = true;
             this.PerksComboBox.Items.AddRange(new object[] {
-            "Ловкость (Agility)",
-            "Интеллект (Intelligence)",
-            "Сила (Power)",
-            "Здоровье (Health)",
-            "Скрытность (Stealth)"});
-            this.PerksComboBox.Location = new System.Drawing.Point(35, 429);
+            "Ловкость ",
+            "Интеллект ",
+            "Сила ",
+            "Здоровье ",
+            "Скрытность "});
+            this.PerksComboBox.Location = new System.Drawing.Point(10, 510);
             this.PerksComboBox.Name = "PerksComboBox";
-            this.PerksComboBox.Size = new System.Drawing.Size(197, 21);
+            this.PerksComboBox.Size = new System.Drawing.Size(310, 33);
             this.PerksComboBox.TabIndex = 11;
             this.PerksComboBox.Visible = false;
             // 
             // ChoosePerksLabel
             // 
             this.ChoosePerksLabel.AutoSize = true;
-            this.ChoosePerksLabel.Location = new System.Drawing.Point(32, 411);
+            this.ChoosePerksLabel.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ChoosePerksLabel.Location = new System.Drawing.Point(12, 484);
             this.ChoosePerksLabel.Name = "ChoosePerksLabel";
-            this.ChoosePerksLabel.Size = new System.Drawing.Size(202, 13);
+            this.ChoosePerksLabel.Size = new System.Drawing.Size(179, 23);
             this.ChoosePerksLabel.TabIndex = 12;
-            this.ChoosePerksLabel.Text = "Выберите пункт выпадающего сипска";
+            this.ChoosePerksLabel.Text = "Выберите перк";
             this.ChoosePerksLabel.Visible = false;
             // 
             // ClassInformationTextbox
             // 
             this.ClassInformationTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ClassInformationTextbox.Location = new System.Drawing.Point(12, 440);
+            this.ClassInformationTextbox.Location = new System.Drawing.Point(12, 544);
             this.ClassInformationTextbox.Multiline = true;
             this.ClassInformationTextbox.Name = "ClassInformationTextbox";
-            this.ClassInformationTextbox.Size = new System.Drawing.Size(245, 25);
+            this.ClassInformationTextbox.Size = new System.Drawing.Size(312, 48);
             this.ClassInformationTextbox.TabIndex = 13;
             this.ClassInformationTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ClassInformationTextbox.Visible = false;
@@ -350,12 +371,12 @@
             this.ChangeClassButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.ChangeClassButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ChangeClassButton.FocusedColor = System.Drawing.Color.Empty;
-            this.ChangeClassButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ChangeClassButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeClassButton.ForeColor = System.Drawing.Color.Black;
             this.ChangeClassButton.Image = null;
             this.ChangeClassButton.ImageSize = new System.Drawing.Size(20, 20);
             this.ChangeClassButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.ChangeClassButton.Location = new System.Drawing.Point(278, 442);
+            this.ChangeClassButton.Location = new System.Drawing.Point(328, 544);
             this.ChangeClassButton.Name = "ChangeClassButton";
             this.ChangeClassButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.ChangeClassButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -363,19 +384,28 @@
             this.ChangeClassButton.OnHoverImage = null;
             this.ChangeClassButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.ChangeClassButton.OnPressedColor = System.Drawing.Color.Black;
-            this.ChangeClassButton.Size = new System.Drawing.Size(220, 23);
+            this.ChangeClassButton.Size = new System.Drawing.Size(284, 48);
             this.ChangeClassButton.TabIndex = 24;
-            this.ChangeClassButton.Text = "Изменить выбранную запись";
+            this.ChangeClassButton.Text = "Изменить запись";
             this.ChangeClassButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ChangeClassButton.Visible = false;
             this.ChangeClassButton.Click += new System.EventHandler(this.ChangeClassButton_Click);
+            // 
+            // ValueTextbox
+            // 
+            this.ValueTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ValueTextbox.Location = new System.Drawing.Point(10, 550);
+            this.ValueTextbox.Name = "ValueTextbox";
+            this.ValueTextbox.Size = new System.Drawing.Size(310, 35);
+            this.ValueTextbox.TabIndex = 25;
+            this.ValueTextbox.Visible = false;
             // 
             // AllClassesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 398);
-            this.Controls.Add(this.ClassInformationTextbox);
+            this.ClientSize = new System.Drawing.Size(624, 571);
+            this.Controls.Add(this.ValueTextbox);
             this.Controls.Add(this.ClassNameTextbox);
             this.Controls.Add(this.ChoosePerksLabel);
             this.Controls.Add(this.PerksComboBox);
@@ -385,8 +415,9 @@
             this.Controls.Add(this.PerksOfClassTable);
             this.Controls.Add(this.AllClassesTable);
             this.Controls.Add(this.TopPanel);
-            this.Controls.Add(this.SaveAddPerksButton);
             this.Controls.Add(this.ChangeClassButton);
+            this.Controls.Add(this.ClassInformationTextbox);
+            this.Controls.Add(this.SaveAddPerksButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AllClassesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -417,5 +448,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton SaveAddPerksButton;
         private System.Windows.Forms.TextBox ClassInformationTextbox;
         private Guna.UI.WinForms.GunaAdvenceButton ChangeClassButton;
+        private System.Windows.Forms.TextBox ValueTextbox;
     }
 }

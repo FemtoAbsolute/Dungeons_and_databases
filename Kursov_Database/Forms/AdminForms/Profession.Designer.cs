@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profession));
             this.ProfessionLabel = new System.Windows.Forms.Label();
             this.MainFormElipse = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -47,10 +48,10 @@
             // 
             // ProfessionLabel
             // 
-            this.ProfessionLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ProfessionLabel.Location = new System.Drawing.Point(225, 41);
+            this.ProfessionLabel.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProfessionLabel.Location = new System.Drawing.Point(298, 41);
             this.ProfessionLabel.Name = "ProfessionLabel";
-            this.ProfessionLabel.Size = new System.Drawing.Size(205, 141);
+            this.ProfessionLabel.Size = new System.Drawing.Size(270, 214);
             this.ProfessionLabel.TabIndex = 10;
             // 
             // MainFormElipse
@@ -63,10 +64,18 @@
             this.AllProfessionsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.AllProfessionsTable.BackgroundColor = System.Drawing.SystemColors.Control;
             this.AllProfessionsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllProfessionsTable.DefaultCellStyle = dataGridViewCellStyle1;
             this.AllProfessionsTable.Location = new System.Drawing.Point(12, 41);
             this.AllProfessionsTable.Name = "AllProfessionsTable";
             this.AllProfessionsTable.ReadOnly = true;
-            this.AllProfessionsTable.Size = new System.Drawing.Size(207, 141);
+            this.AllProfessionsTable.Size = new System.Drawing.Size(280, 214);
             this.AllProfessionsTable.TabIndex = 9;
             this.AllProfessionsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
@@ -89,7 +98,7 @@
             this.CollapseButton.Image = null;
             this.CollapseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CollapseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CollapseButton.Location = new System.Drawing.Point(388, 12);
+            this.CollapseButton.Location = new System.Drawing.Point(526, 12);
             this.CollapseButton.Name = "CollapseButton";
             this.CollapseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CollapseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -121,7 +130,7 @@
             this.CloseButton.Image = null;
             this.CloseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CloseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CloseButton.Location = new System.Drawing.Point(412, 12);
+            this.CloseButton.Location = new System.Drawing.Point(550, 12);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CloseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -142,7 +151,7 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(443, 35);
+            this.TopPanel.Size = new System.Drawing.Size(581, 35);
             this.TopPanel.TabIndex = 11;
             // 
             // TopPanelDragControl
@@ -151,10 +160,11 @@
             // 
             // ProfessionInformationTextbox
             // 
-            this.ProfessionInformationTextbox.Location = new System.Drawing.Point(12, 216);
+            this.ProfessionInformationTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProfessionInformationTextbox.Location = new System.Drawing.Point(12, 303);
             this.ProfessionInformationTextbox.Multiline = true;
             this.ProfessionInformationTextbox.Name = "ProfessionInformationTextbox";
-            this.ProfessionInformationTextbox.Size = new System.Drawing.Size(418, 40);
+            this.ProfessionInformationTextbox.Size = new System.Drawing.Size(556, 60);
             this.ProfessionInformationTextbox.TabIndex = 12;
             // 
             // AddProfessionButton
@@ -170,12 +180,12 @@
             this.AddProfessionButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.AddProfessionButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddProfessionButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddProfessionButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AddProfessionButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddProfessionButton.ForeColor = System.Drawing.Color.Black;
             this.AddProfessionButton.Image = null;
             this.AddProfessionButton.ImageSize = new System.Drawing.Size(20, 20);
             this.AddProfessionButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.AddProfessionButton.Location = new System.Drawing.Point(12, 262);
+            this.AddProfessionButton.Location = new System.Drawing.Point(12, 369);
             this.AddProfessionButton.Name = "AddProfessionButton";
             this.AddProfessionButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.AddProfessionButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -183,7 +193,7 @@
             this.AddProfessionButton.OnHoverImage = null;
             this.AddProfessionButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.AddProfessionButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddProfessionButton.Size = new System.Drawing.Size(415, 31);
+            this.AddProfessionButton.Size = new System.Drawing.Size(556, 43);
             this.AddProfessionButton.TabIndex = 13;
             this.AddProfessionButton.Text = "Добавить новую профессию";
             this.AddProfessionButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -191,10 +201,11 @@
             // 
             // ProfessionNameTextbox
             // 
-            this.ProfessionNameTextbox.Location = new System.Drawing.Point(12, 188);
+            this.ProfessionNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProfessionNameTextbox.Location = new System.Drawing.Point(12, 261);
             this.ProfessionNameTextbox.Multiline = true;
             this.ProfessionNameTextbox.Name = "ProfessionNameTextbox";
-            this.ProfessionNameTextbox.Size = new System.Drawing.Size(415, 22);
+            this.ProfessionNameTextbox.Size = new System.Drawing.Size(557, 36);
             this.ProfessionNameTextbox.TabIndex = 14;
             // 
             // ChangeButton
@@ -210,12 +221,12 @@
             this.ChangeButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.ChangeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ChangeButton.FocusedColor = System.Drawing.Color.Empty;
-            this.ChangeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ChangeButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeButton.ForeColor = System.Drawing.Color.Black;
             this.ChangeButton.Image = null;
             this.ChangeButton.ImageSize = new System.Drawing.Size(20, 20);
             this.ChangeButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.ChangeButton.Location = new System.Drawing.Point(12, 299);
+            this.ChangeButton.Location = new System.Drawing.Point(12, 418);
             this.ChangeButton.Name = "ChangeButton";
             this.ChangeButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.ChangeButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -223,7 +234,7 @@
             this.ChangeButton.OnHoverImage = null;
             this.ChangeButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.ChangeButton.OnPressedColor = System.Drawing.Color.Black;
-            this.ChangeButton.Size = new System.Drawing.Size(415, 31);
+            this.ChangeButton.Size = new System.Drawing.Size(556, 40);
             this.ChangeButton.TabIndex = 24;
             this.ChangeButton.Text = "Изменить выбранную запись";
             this.ChangeButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -233,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 339);
+            this.ClientSize = new System.Drawing.Size(581, 470);
             this.Controls.Add(this.ChangeButton);
             this.Controls.Add(this.ProfessionNameTextbox);
             this.Controls.Add(this.AddProfessionButton);

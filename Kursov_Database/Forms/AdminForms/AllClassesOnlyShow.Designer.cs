@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FractionsLabel = new System.Windows.Forms.Label();
             this.MainFormElipse = new Guna.UI.WinForms.GunaElipse(this.components);
             this.AllFractionsTable = new System.Windows.Forms.DataGridView();
@@ -42,10 +43,10 @@
             // 
             // FractionsLabel
             // 
-            this.FractionsLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FractionsLabel.Location = new System.Drawing.Point(230, 41);
+            this.FractionsLabel.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FractionsLabel.Location = new System.Drawing.Point(388, 38);
             this.FractionsLabel.Name = "FractionsLabel";
-            this.FractionsLabel.Size = new System.Drawing.Size(200, 141);
+            this.FractionsLabel.Size = new System.Drawing.Size(351, 337);
             this.FractionsLabel.TabIndex = 7;
             // 
             // MainFormElipse
@@ -58,10 +59,18 @@
             this.AllFractionsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.AllFractionsTable.BackgroundColor = System.Drawing.SystemColors.Control;
             this.AllFractionsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllFractionsTable.DefaultCellStyle = dataGridViewCellStyle1;
             this.AllFractionsTable.Location = new System.Drawing.Point(12, 41);
             this.AllFractionsTable.Name = "AllFractionsTable";
             this.AllFractionsTable.ReadOnly = true;
-            this.AllFractionsTable.Size = new System.Drawing.Size(201, 141);
+            this.AllFractionsTable.Size = new System.Drawing.Size(370, 334);
             this.AllFractionsTable.TabIndex = 6;
             this.AllFractionsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
@@ -84,7 +93,7 @@
             this.CollapseButton.Image = null;
             this.CollapseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CollapseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CollapseButton.Location = new System.Drawing.Point(388, 12);
+            this.CollapseButton.Location = new System.Drawing.Point(697, 12);
             this.CollapseButton.Name = "CollapseButton";
             this.CollapseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CollapseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -116,7 +125,7 @@
             this.CloseButton.Image = null;
             this.CloseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CloseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CloseButton.Location = new System.Drawing.Point(412, 12);
+            this.CloseButton.Location = new System.Drawing.Point(721, 12);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CloseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -137,7 +146,7 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(445, 35);
+            this.TopPanel.Size = new System.Drawing.Size(751, 35);
             this.TopPanel.TabIndex = 8;
             // 
             // TopPanelDragControl
@@ -148,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 195);
+            this.ClientSize = new System.Drawing.Size(751, 384);
             this.Controls.Add(this.FractionsLabel);
             this.Controls.Add(this.AllFractionsTable);
             this.Controls.Add(this.TopPanel);

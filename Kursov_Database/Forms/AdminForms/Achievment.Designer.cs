@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Achievment));
             this.AchievmentLabel = new System.Windows.Forms.Label();
             this.MainFormElipse = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -49,10 +50,10 @@
             // 
             // AchievmentLabel
             // 
-            this.AchievmentLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AchievmentLabel.Location = new System.Drawing.Point(225, 45);
+            this.AchievmentLabel.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AchievmentLabel.Location = new System.Drawing.Point(305, 45);
             this.AchievmentLabel.Name = "AchievmentLabel";
-            this.AchievmentLabel.Size = new System.Drawing.Size(205, 93);
+            this.AchievmentLabel.Size = new System.Drawing.Size(275, 138);
             this.AchievmentLabel.TabIndex = 16;
             // 
             // MainFormElipse
@@ -65,10 +66,18 @@
             this.AllAchievmentsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.AllAchievmentsTable.BackgroundColor = System.Drawing.SystemColors.Control;
             this.AllAchievmentsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllAchievmentsTable.DefaultCellStyle = dataGridViewCellStyle1;
             this.AllAchievmentsTable.Location = new System.Drawing.Point(12, 45);
             this.AllAchievmentsTable.Name = "AllAchievmentsTable";
             this.AllAchievmentsTable.ReadOnly = true;
-            this.AllAchievmentsTable.Size = new System.Drawing.Size(207, 141);
+            this.AllAchievmentsTable.Size = new System.Drawing.Size(287, 200);
             this.AllAchievmentsTable.TabIndex = 15;
             this.AllAchievmentsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
@@ -91,7 +100,7 @@
             this.CollapseButton.Image = null;
             this.CollapseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CollapseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CollapseButton.Location = new System.Drawing.Point(388, 12);
+            this.CollapseButton.Location = new System.Drawing.Point(538, 12);
             this.CollapseButton.Name = "CollapseButton";
             this.CollapseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CollapseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -123,7 +132,7 @@
             this.CloseButton.Image = null;
             this.CloseButton.ImageSize = new System.Drawing.Size(20, 20);
             this.CloseButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.CloseButton.Location = new System.Drawing.Point(412, 12);
+            this.CloseButton.Location = new System.Drawing.Point(562, 12);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.CloseButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -144,7 +153,7 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(442, 35);
+            this.TopPanel.Size = new System.Drawing.Size(592, 35);
             this.TopPanel.TabIndex = 17;
             // 
             // TopPanelDragControl
@@ -153,18 +162,20 @@
             // 
             // AchievmentNameTextbox
             // 
-            this.AchievmentNameTextbox.Location = new System.Drawing.Point(12, 192);
+            this.AchievmentNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AchievmentNameTextbox.Location = new System.Drawing.Point(12, 251);
             this.AchievmentNameTextbox.Multiline = true;
             this.AchievmentNameTextbox.Name = "AchievmentNameTextbox";
-            this.AchievmentNameTextbox.Size = new System.Drawing.Size(207, 22);
+            this.AchievmentNameTextbox.Size = new System.Drawing.Size(287, 34);
             this.AchievmentNameTextbox.TabIndex = 20;
             // 
             // AchievmentInformationTextbox
             // 
-            this.AchievmentInformationTextbox.Location = new System.Drawing.Point(12, 220);
+            this.AchievmentInformationTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AchievmentInformationTextbox.Location = new System.Drawing.Point(12, 291);
             this.AchievmentInformationTextbox.Multiline = true;
             this.AchievmentInformationTextbox.Name = "AchievmentInformationTextbox";
-            this.AchievmentInformationTextbox.Size = new System.Drawing.Size(418, 40);
+            this.AchievmentInformationTextbox.Size = new System.Drawing.Size(568, 50);
             this.AchievmentInformationTextbox.TabIndex = 18;
             // 
             // AddAchievmentButton
@@ -180,12 +191,12 @@
             this.AddAchievmentButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.AddAchievmentButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddAchievmentButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddAchievmentButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AddAchievmentButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddAchievmentButton.ForeColor = System.Drawing.Color.Black;
             this.AddAchievmentButton.Image = null;
             this.AddAchievmentButton.ImageSize = new System.Drawing.Size(20, 20);
             this.AddAchievmentButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.AddAchievmentButton.Location = new System.Drawing.Point(12, 266);
+            this.AddAchievmentButton.Location = new System.Drawing.Point(12, 347);
             this.AddAchievmentButton.Name = "AddAchievmentButton";
             this.AddAchievmentButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.AddAchievmentButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -193,7 +204,7 @@
             this.AddAchievmentButton.OnHoverImage = null;
             this.AddAchievmentButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.AddAchievmentButton.OnPressedColor = System.Drawing.Color.Black;
-            this.AddAchievmentButton.Size = new System.Drawing.Size(415, 31);
+            this.AddAchievmentButton.Size = new System.Drawing.Size(568, 53);
             this.AddAchievmentButton.TabIndex = 19;
             this.AddAchievmentButton.Text = "Добавить новое достижение";
             this.AddAchievmentButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -201,18 +212,19 @@
             // 
             // AchievmentRewardTextbox
             // 
-            this.AchievmentRewardTextbox.Location = new System.Drawing.Point(223, 192);
+            this.AchievmentRewardTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AchievmentRewardTextbox.Location = new System.Drawing.Point(305, 251);
             this.AchievmentRewardTextbox.Multiline = true;
             this.AchievmentRewardTextbox.Name = "AchievmentRewardTextbox";
-            this.AchievmentRewardTextbox.Size = new System.Drawing.Size(207, 22);
+            this.AchievmentRewardTextbox.Size = new System.Drawing.Size(275, 34);
             this.AchievmentRewardTextbox.TabIndex = 21;
             // 
             // RewardLabel
             // 
-            this.RewardLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RewardLabel.Location = new System.Drawing.Point(225, 138);
+            this.RewardLabel.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RewardLabel.Location = new System.Drawing.Point(302, 197);
             this.RewardLabel.Name = "RewardLabel";
-            this.RewardLabel.Size = new System.Drawing.Size(205, 48);
+            this.RewardLabel.Size = new System.Drawing.Size(278, 48);
             this.RewardLabel.TabIndex = 22;
             // 
             // ChangeButton
@@ -228,12 +240,12 @@
             this.ChangeButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.ChangeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ChangeButton.FocusedColor = System.Drawing.Color.Empty;
-            this.ChangeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ChangeButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeButton.ForeColor = System.Drawing.Color.Black;
             this.ChangeButton.Image = null;
             this.ChangeButton.ImageSize = new System.Drawing.Size(20, 20);
             this.ChangeButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.ChangeButton.Location = new System.Drawing.Point(12, 303);
+            this.ChangeButton.Location = new System.Drawing.Point(12, 406);
             this.ChangeButton.Name = "ChangeButton";
             this.ChangeButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.ChangeButton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -241,7 +253,7 @@
             this.ChangeButton.OnHoverImage = null;
             this.ChangeButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.ChangeButton.OnPressedColor = System.Drawing.Color.Black;
-            this.ChangeButton.Size = new System.Drawing.Size(415, 31);
+            this.ChangeButton.Size = new System.Drawing.Size(568, 46);
             this.ChangeButton.TabIndex = 23;
             this.ChangeButton.Text = "Изменить выбранную запись";
             this.ChangeButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -251,7 +263,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 341);
+            this.ClientSize = new System.Drawing.Size(592, 464);
             this.Controls.Add(this.ChangeButton);
             this.Controls.Add(this.RewardLabel);
             this.Controls.Add(this.AchievmentRewardTextbox);

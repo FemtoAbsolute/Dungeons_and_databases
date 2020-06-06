@@ -439,7 +439,7 @@
             this.gunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.DimGray;
             this.gunaAdvenceButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaAdvenceButton5.Font = new System.Drawing.Font("Dungeon", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton5.Image = global::Kursov_Database.Properties.Resources.Inv_boots_leather_11v3;
             this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
@@ -471,7 +471,7 @@
             this.gunaAdvenceButton4.CheckedLineColor = System.Drawing.Color.DimGray;
             this.gunaAdvenceButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaAdvenceButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton4.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaAdvenceButton4.Font = new System.Drawing.Font("Dungeon", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton4.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton4.Image = global::Kursov_Database.Properties.Resources.inv_pants_armor_dwarf_d_01;
             this.gunaAdvenceButton4.ImageSize = new System.Drawing.Size(20, 20);
@@ -503,7 +503,7 @@
             this.gunaAdvenceButton6.CheckedLineColor = System.Drawing.Color.DimGray;
             this.gunaAdvenceButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaAdvenceButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton6.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaAdvenceButton6.Font = new System.Drawing.Font("Dungeon", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton6.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton6.Image = global::Kursov_Database.Properties.Resources.unnamed__2_;
             this.gunaAdvenceButton6.ImageSize = new System.Drawing.Size(20, 20);
@@ -535,7 +535,7 @@
             this.gunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.DimGray;
             this.gunaAdvenceButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton3.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaAdvenceButton3.Font = new System.Drawing.Font("Dungeon", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton3.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton3.Image = global::Kursov_Database.Properties.Resources.Inv_weapon_shortblade_14;
             this.gunaAdvenceButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -567,7 +567,7 @@
             this.OpenBodyForm.CheckedLineColor = System.Drawing.Color.DimGray;
             this.OpenBodyForm.DialogResult = System.Windows.Forms.DialogResult.None;
             this.OpenBodyForm.FocusedColor = System.Drawing.Color.Empty;
-            this.OpenBodyForm.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OpenBodyForm.Font = new System.Drawing.Font("Dungeon", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OpenBodyForm.ForeColor = System.Drawing.Color.White;
             this.OpenBodyForm.Image = global::Kursov_Database.Properties.Resources.Inv_chest_plate04;
             this.OpenBodyForm.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -599,7 +599,7 @@
             this.AddHeadButton.CheckedLineColor = System.Drawing.Color.DimGray;
             this.AddHeadButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.AddHeadButton.FocusedColor = System.Drawing.Color.Empty;
-            this.AddHeadButton.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddHeadButton.Font = new System.Drawing.Font("Dungeon", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddHeadButton.ForeColor = System.Drawing.Color.White;
             this.AddHeadButton.Image = global::Kursov_Database.Properties.Resources.Inv_helmet_57;
             this.AddHeadButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;

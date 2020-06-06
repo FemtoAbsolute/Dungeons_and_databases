@@ -17,9 +17,11 @@ namespace Kursov_Database.Forms.AdminForms
       //  int PerkIndex;
         public AllClassesForm()
         {
-            this.Width = 510;
-            this.Height = 392;
             InitializeComponent();
+  
+            this.Width = 624;
+            this.Height = 472;
+
             ConnectToDatabase("root", "root");
             ShowAllPerks();
             DisconnectFromDatabase();
@@ -72,13 +74,15 @@ namespace Kursov_Database.Forms.AdminForms
             Adapter = new MySqlDataAdapter("select id_class, name from `kursach_database`.class;", Connection);
             Adapter.Fill(Table);
             AllClassesTable.DataSource = Table;
+            AllClassesTable.Columns[0].Visible = false;
+            AllClassesTable.Columns[1].HeaderText = "Все классы";
 
         }
 
         private void AddClassButton_Click(object sender, EventArgs e)
         {
-            this.Width = 510;
-            this.Height = 477;
+            this.Width = 624;
+            this.Height = 605;
             AddSaveClassButton.Visible = true;
             ClassNameTextbox.Visible = true;
             ClassInformationTextbox.Visible = true;
@@ -98,8 +102,8 @@ namespace Kursov_Database.Forms.AdminForms
             ClassNameTextbox.Visible = false;
             ClassInformationTextbox.Visible = false;
             ChangeClassButton.Visible = false;
-            this.Width = 510;
-            this.Height = 392;
+            this.Width = 624;
+            this.Height = 472;
             DisconnectFromDatabase();
         }
 
@@ -124,11 +128,13 @@ namespace Kursov_Database.Forms.AdminForms
 
         private void AddPerkButton_Click(object sender, EventArgs e)
         {
-            this.Width = 510;
-            this.Height = 477;
+            
+            this.Width = 624;
+            this.Height = 605;
             ChoosePerksLabel.Visible = true;
             SaveAddPerksButton.Visible = true;
             PerksComboBox.Visible = true;
+            ValueTextbox.Visible = true;
           //  ChangePerkButton.Visible = true;
         }
 
@@ -141,18 +147,19 @@ namespace Kursov_Database.Forms.AdminForms
                     
                     ConnectToDatabase("root", "root");
 
-                    string commandText = String.Format("insert into `kursach_database`.perks_of_current (class_id_class, perks_id_perks) values ({0},{1});", IndexOfClass, PerksComboBox.SelectedIndex+1);
+                    string commandText = String.Format("insert into `kursach_database`.perks_of_current (class_id_class, perks_id_perks, value_of_perk) values ({0},{1},{2});", IndexOfClass, PerksComboBox.SelectedIndex+6, ValueTextbox.Text);
                     MySqlCommand command = new MySqlCommand(commandText, Connection);
                     MySqlDataReader dataReader;
                     dataReader = command.ExecuteReader();
                     RefreshPerksTable();
-                    this.Width = 510;
-                    this.Height = 392;
+                    this.Width = 624;
+                    this.Height = 472;
                     PerksOfClassTable.Columns[0].HeaderText = "Перки данного класса";
                     DisconnectFromDatabase();
                     ChoosePerksLabel.Visible = false;
                     PerksComboBox.Visible = false;
                     SaveAddPerksButton.Visible = false;
+                    ValueTextbox.Visible = false;
                     //ChangePerkButton.Visible = false;
 
             }
@@ -171,6 +178,7 @@ namespace Kursov_Database.Forms.AdminForms
             Adapter = new MySqlDataAdapter("select perks.name from perks_of_current inner join class on class_id_class = id_class inner join perks on perks_id_perks = id_perks WHERE CLASS.NAME = '" + NameOfClass + "'", Connection);
             Adapter.Fill(Table);
             PerksOfClassTable.DataSource = Table;
+            PerksOfClassTable.Columns[0].HeaderText = "Перки данного класса";
             DisconnectFromDatabase();
         }
 
@@ -189,8 +197,8 @@ namespace Kursov_Database.Forms.AdminForms
                 ClassNameTextbox.Visible = false;
                 ClassInformationTextbox.Visible = false;
                 ChangeClassButton.Visible = false;
-                this.Width = 510;
-                this.Height = 392;
+                this.Width = 624;
+                this.Height = 472;
                 DisconnectFromDatabase();
             }
             catch
@@ -199,32 +207,32 @@ namespace Kursov_Database.Forms.AdminForms
             }
         }
 
-        private void ChangePerkButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
+        //private void changeperkbutton_click(object sender, eventargs e)
+        //{
+        //    try
+        //    {
 
-                ConnectToDatabase("root", "root");
+        //        connecttodatabase("root", "root");
 
-                string commandText = String.Format("update `kursach_database`.perks_of_current set class_id_class = {0}, perks_id_perks = {1} WHERE id_class = {2});", IndexOfClass, PerksComboBox.SelectedIndex + 1, IndexOfClass);
-                MySqlCommand command = new MySqlCommand(commandText, Connection);
-                MySqlDataReader dataReader;
-                dataReader = command.ExecuteReader();
-                RefreshPerksTable();
-                this.Width = 510;
-                this.Height = 392;
-                PerksOfClassTable.Columns[0].HeaderText = "Перки данного класса";
-                DisconnectFromDatabase();
-                ChoosePerksLabel.Visible = false;
-                PerksComboBox.Visible = false;
-                SaveAddPerksButton.Visible = false;
-                //ChangePerkButton.Visible = false;
-            }
-            catch (Exception)
-            {
+        //        string commandtext = string.format("update `kursach_database`.perks_of_current set class_id_class = {0}, perks_id_perks = {1} where id_class = {2});", indexofclass, perkscombobox.selectedindex + 1, indexofclass);
+        //        mysqlcommand command = new mysqlcommand(commandtext, connection);
+        //        mysqldatareader datareader;
+        //        datareader = command.executereader();
+        //        refreshperkstable();
+        //        this.width = 624;
+        //        this.height = 472;
+        //        perksofclasstable.columns[0].headertext = "перки данного класса";
+        //        disconnectfromdatabase();
+        //        chooseperkslabel.visible = false;
+        //        perkscombobox.visible = false;
+        //        saveaddperksbutton.visible = false;
+        //        changeperkbutton.visible = false;
+        //    }
+        //    catch (exception)
+        //    {
 
-            }
-        }
+        //    }
+        //}
 
         private void CellMouseClickPerk(object sender, DataGridViewCellMouseEventArgs e)
         {
