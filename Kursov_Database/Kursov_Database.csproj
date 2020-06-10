@@ -187,6 +187,24 @@
     <Compile Include="Forms\AdminForms\Talents.Designer.cs">
       <DependentUpon>Talents.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\InformationForms\AllProfessionForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationForms\AllProfessionForms.Designer.cs">
+      <DependentUpon>AllProfessionForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationForms\CompleteQuests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationForms\CompleteQuests.Designer.cs">
+      <DependentUpon>CompleteQuests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InformationForms\PlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InformationForms\PlayForm.Designer.cs">
+      <DependentUpon>PlayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +269,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\Talents.resx">
       <DependentUpon>Talents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationForms\AllProfessionForms.resx">
+      <DependentUpon>AllProfessionForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationForms\CompleteQuests.resx">
+      <DependentUpon>CompleteQuests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InformationForms\PlayForm.resx">
+      <DependentUpon>PlayForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -378,6 +405,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Protec.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BossBold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BossCare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BossLong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BossTail.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

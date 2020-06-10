@@ -62,7 +62,7 @@
             this.AllPerksTable.Location = new System.Drawing.Point(12, 41);
             this.AllPerksTable.Name = "AllPerksTable";
             this.AllPerksTable.ReadOnly = true;
-            this.AllPerksTable.Size = new System.Drawing.Size(372, 331);
+            this.AllPerksTable.Size = new System.Drawing.Size(372, 217);
             this.AllPerksTable.TabIndex = 0;
             this.AllPerksTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
@@ -157,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 384);
+            this.ClientSize = new System.Drawing.Size(751, 270);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.PerksLabel);
             this.Controls.Add(this.AllPerksTable);

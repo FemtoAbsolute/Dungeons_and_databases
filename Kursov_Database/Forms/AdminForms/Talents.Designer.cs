@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TalentsLabel = new System.Windows.Forms.Label();
             this.MainFormElipse = new Guna.UI.WinForms.GunaElipse(this.components);
             this.AllTalentsTable = new System.Windows.Forms.DataGridView();
@@ -46,7 +46,7 @@
             this.TalentsLabel.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TalentsLabel.Location = new System.Drawing.Point(388, 41);
             this.TalentsLabel.Name = "TalentsLabel";
-            this.TalentsLabel.Size = new System.Drawing.Size(351, 334);
+            this.TalentsLabel.Size = new System.Drawing.Size(351, 155);
             this.TalentsLabel.TabIndex = 7;
             // 
             // MainFormElipse
@@ -59,18 +59,18 @@
             this.AllTalentsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.AllTalentsTable.BackgroundColor = System.Drawing.SystemColors.Control;
             this.AllTalentsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AllTalentsTable.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllTalentsTable.DefaultCellStyle = dataGridViewCellStyle1;
             this.AllTalentsTable.Location = new System.Drawing.Point(12, 41);
             this.AllTalentsTable.Name = "AllTalentsTable";
             this.AllTalentsTable.ReadOnly = true;
-            this.AllTalentsTable.Size = new System.Drawing.Size(370, 334);
+            this.AllTalentsTable.Size = new System.Drawing.Size(370, 155);
             this.AllTalentsTable.TabIndex = 6;
             this.AllTalentsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
@@ -157,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 384);
+            this.ClientSize = new System.Drawing.Size(751, 206);
             this.Controls.Add(this.TalentsLabel);
             this.Controls.Add(this.AllTalentsTable);
             this.Controls.Add(this.TopPanel);

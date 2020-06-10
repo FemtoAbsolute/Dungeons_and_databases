@@ -250,7 +250,7 @@ namespace Kursov_Database.Forms.PlayerForms
                 DisconnectFromDatabase();
 
                 ConnectToDatabase("root", "root");
-                string commandText1 = String.Format("insert into `kursach_database`.character (appearence, name, class, fraction, talents, armor, profession) values ('{0}', '{1}', {2}, {3}, {4}, {5}, {6});", AppearenceCombobox.SelectedItem.ToString(), NameTextbox.Text, ClassID, FractionID, TalentsID, NewSetOfArmor, ProfessionID);
+                string commandText1 = String.Format("insert into `kursach_database`.character (appearence, name, class, fraction, talents, armor, profession, level) values ('{0}', '{1}', {2}, {3}, {4}, {5}, {6}, 0);", AppearenceCombobox.SelectedItem.ToString(), NameTextbox.Text, ClassID, FractionID, TalentsID, NewSetOfArmor, ProfessionID);
                 MySqlCommand command1 = new MySqlCommand(commandText1, Connection);
                 MySqlDataReader dataReader1;
                 dataReader1 = command1.ExecuteReader();
@@ -261,6 +261,135 @@ namespace Kursov_Database.Forms.PlayerForms
             {
                 MessageBox.Show(ex.ToString()); 
             }
+        }
+
+        private void ShowPerksButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forms.AdminForms.AllPerksForm AllPerksForm = new AdminForms.AllPerksForm();
+            AllPerksForm.ShowDialog();
+            this.Show();
+        }
+
+        private void ShowAllTalents_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forms.AdminForms.Talents Talents = new AdminForms.Talents();
+            Talents.ShowDialog();
+            this.Show();
+        }
+
+        private void ShowAllFractions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forms.AdminForms.Fractions Fractions = new AdminForms.Fractions();
+            Fractions.ShowDialog();
+            this.Show();
+        }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            ResultLabel.Text = string.Empty;
+            SearchResultLabel.Text = string.Empty;
+            string QuerryPerk = "";
+            try {
+                if (PerksCombobox.SelectedItem.ToString() == "Интеллекту")
+                {
+                    ResultLabel.Text = "Хочешь быть умнее? Выбирай:";
+                    QuerryPerk = "Интеллект";
+
+                }
+                if (PerksCombobox.SelectedItem.ToString() == "Здоровью")
+                {
+                    QuerryPerk = "Здоровье";
+                    ResultLabel.Text = "Хочешь быть выносливее? Выбирай:";
+                }
+
+                if (PerksCombobox.SelectedItem.ToString() == "Силе")
+                {
+                    ResultLabel.Text = "Хочешь быть сильнее? Выбирай:";
+                    QuerryPerk = "Сила";
+                }
+                if (PerksCombobox.SelectedItem.ToString() == "Скрытности")
+                {
+                    QuerryPerk = "Скрытность";
+                    ResultLabel.Text = "Хочешь быть незаметнее? Выбирай:";
+                }
+                if (PerksCombobox.SelectedItem.ToString() == "Скорости")
+                {
+                    QuerryPerk = "Ловкость";
+                    ResultLabel.Text = "Хочешь быть быстрее? Выбирай:";
+                }
+
+                if (ListCombobox.SelectedItem.ToString() == "Фракций")
+                {
+                    if (PerksCombobox.SelectedItem.ToString() == "Интеллекту" && Convert.ToInt32(ValueTextbox.Text) <= 100)
+                        SearchResultLabel.Text = "Королевство Баз - твой выбор. Получишь сразу +100 к Интеллекту!";
+                    else if (PerksCombobox.SelectedItem.ToString() == "Силе" && Convert.ToInt32(ValueTextbox.Text) <= 100)
+                        SearchResultLabel.Text = "Империя сессий - твой выбор. Получишь сразу +100 к Силе!";
+                    else  if (PerksCombobox.SelectedItem.ToString() == "Здоровью" && Convert.ToInt32(ValueTextbox.Text) <= 100)
+                        SearchResultLabel.Text = "Альянс Кафедр - твой выбор. Получишь сразу +100 к Здоровью!";
+                    else
+                        SearchResultLabel.Text = "Ничего не найдено";
+                }
+                
+
+                if (ListCombobox.SelectedItem.ToString() == "Талантов")
+                {
+                    if (PerksCombobox.SelectedItem.ToString() == "Силе" && Convert.ToInt32(ValueTextbox.Text) <= 100 && Convert.ToInt32(ValueTextbox.Text) >= 50)
+                        SearchResultLabel.Text = "Выбрав талант атаки ты получишь +100 к силе";
+                    else if (PerksCombobox.SelectedItem.ToString() == "Силе" && Convert.ToInt32(ValueTextbox.Text) <= 50)
+                        SearchResultLabel.Text = "Ты можешь выбрать таланты Атаки или Баланса, получив +100 и +50 к силе соответственно";
+
+                    else if (PerksCombobox.SelectedItem.ToString() == "Здоровью" && Convert.ToInt32(ValueTextbox.Text) <= 100 && Convert.ToInt32(ValueTextbox.Text) >= 50)
+                        SearchResultLabel.Text = "Выбрав талант защиты ты получишь +100 к здоровью";
+                    else if (PerksCombobox.SelectedItem.ToString() == "Здоровью" && Convert.ToInt32(ValueTextbox.Text) <= 50)
+                        SearchResultLabel.Text = "Ты можешь выбрать таланты Защиты или Баланса, получив +100 и +50 к здоровью соответственно";
+                    else
+                        SearchResultLabel.Text = "Ничего не найдено";
+                }
+
+
+                if (ListCombobox.SelectedItem.ToString() == "Классов")
+                {
+                    ConnectToDatabase("root", "root");
+                    DataTable Table = new DataTable();
+                    MySqlDataAdapter Adapter;
+                    Table = new DataTable();
+                    Adapter = new MySqlDataAdapter("SELECT value_of_perk, class.name FROM Perks_of_current JOIN Perks ON perks_id_perks = id_perks JOIN Class ON class_id_class = id_class WHERE perks.Name = '"+ QuerryPerk +"' AND value_of_perk >"+ ValueTextbox.Text +";", Connection);
+                    Adapter.Fill(Table);
+                    string AllAvaliableClasses = "";
+                    for (int i = 0; i < Table.Rows.Count; i++)
+                    {
+                        AllAvaliableClasses += Table.Rows[i][1].ToString() + "- +" + Table.Rows[i][0].ToString() +" "+ QuerryPerk + Environment.NewLine;
+                    }
+                    SearchResultLabel.Text = AllAvaliableClasses;
+                    DisconnectFromDatabase();
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void ShowClassesButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forms.AdminForms.AllClassesOnlyShow AllClacces = new AdminForms.AllClassesOnlyShow();
+            AllClacces.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forms.InformationForms.AllProfessionForms AllProfessions = new InformationForms.AllProfessionForms();
+            AllProfessions.ShowDialog();
+            this.Show();
         }
     }
 }

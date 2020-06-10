@@ -1,6 +1,6 @@
-﻿namespace Kursov_Database.Forms.AdminForms
+﻿namespace Kursov_Database.Forms.InformationForms
 {
-    partial class Fractions
+    partial class AllProfessionForms
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,7 @@
             this.FractionsLabel.Location = new System.Drawing.Point(388, 38);
             this.FractionsLabel.Name = "FractionsLabel";
             this.FractionsLabel.Size = new System.Drawing.Size(351, 337);
-            this.FractionsLabel.TabIndex = 4;
+            this.FractionsLabel.TabIndex = 7;
             // 
             // MainFormElipse
             // 
@@ -71,7 +71,7 @@
             this.AllFractionsTable.Name = "AllFractionsTable";
             this.AllFractionsTable.ReadOnly = true;
             this.AllFractionsTable.Size = new System.Drawing.Size(370, 172);
-            this.AllFractionsTable.TabIndex = 3;
+            this.AllFractionsTable.TabIndex = 6;
             this.AllFractionsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
             // CollapseButton
@@ -136,7 +136,7 @@
             this.CloseButton.Radius = 10;
             this.CloseButton.Size = new System.Drawing.Size(18, 17);
             this.CloseButton.TabIndex = 23;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click_1);
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // TopPanel
             // 
@@ -146,25 +146,25 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(751, 35);
-            this.TopPanel.TabIndex = 5;
+            this.TopPanel.Size = new System.Drawing.Size(752, 35);
+            this.TopPanel.TabIndex = 8;
             // 
             // TopPanelDragControl
             // 
             this.TopPanelDragControl.TargetControl = this.TopPanel;
             // 
-            // Fractions
+            // AllProfessionForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 223);
+            this.ClientSize = new System.Drawing.Size(752, 230);
             this.Controls.Add(this.FractionsLabel);
             this.Controls.Add(this.AllFractionsTable);
             this.Controls.Add(this.TopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Fractions";
+            this.Name = "AllProfessionForms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fractions";
+            this.Text = "AllProfessionForms";
             ((System.ComponentModel.ISupportInitialize)(this.AllFractionsTable)).EndInit();
             this.TopPanel.ResumeLayout(false);
             this.ResumeLayout(false);

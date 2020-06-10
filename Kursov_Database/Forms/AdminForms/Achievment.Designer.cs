@@ -206,7 +206,7 @@
             this.AddAchievmentButton.OnPressedColor = System.Drawing.Color.Black;
             this.AddAchievmentButton.Size = new System.Drawing.Size(568, 53);
             this.AddAchievmentButton.TabIndex = 19;
-            this.AddAchievmentButton.Text = "Добавить новое достижение";
+            this.AddAchievmentButton.Text = "Добавить новый квест";
             this.AddAchievmentButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.AddAchievmentButton.Click += new System.EventHandler(this.AddAchievmentButton_Click);
             // 

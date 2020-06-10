@@ -234,7 +234,7 @@
             this.AddAchievmentButton.OnPressedColor = System.Drawing.Color.Black;
             this.AddAchievmentButton.Size = new System.Drawing.Size(275, 42);
             this.AddAchievmentButton.TabIndex = 7;
-            this.AddAchievmentButton.Text = "Добавить новое достижение";
+            this.AddAchievmentButton.Text = "Добавить новый квест";
             this.AddAchievmentButton.Click += new System.EventHandler(this.AddAchievmentButton_Click);
             // 
             // ProfessionButton

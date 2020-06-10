@@ -133,6 +133,18 @@
   <data name="BaseKingdom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseKingdom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BossBold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BossBold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BossCare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BossCare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BossLong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BossLong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BossTail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BossTail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CafedrAllianse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CafedrAllianse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

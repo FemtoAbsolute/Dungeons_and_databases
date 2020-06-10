@@ -1,6 +1,6 @@
-﻿namespace Kursov_Database.Forms.AdminForms
+﻿namespace Kursov_Database.Forms.InformationForms
 {
-    partial class Fractions
+    partial class CompleteQuests
     {
         /// <summary>
         /// Required designer variable.
@@ -30,35 +30,36 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.FractionsLabel = new System.Windows.Forms.Label();
+            this.InfoLabel = new System.Windows.Forms.Label();
             this.MainFormElipse = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.AllFractionsTable = new System.Windows.Forms.DataGridView();
+            this.QuestsListTable = new System.Windows.Forms.DataGridView();
             this.CollapseButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.CloseButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.TopPanelDragControl = new Guna.UI.WinForms.GunaDragControl(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.AllFractionsTable)).BeginInit();
+            this.RewardLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestsListTable)).BeginInit();
             this.TopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // FractionsLabel
+            // InfoLabel
             // 
-            this.FractionsLabel.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FractionsLabel.Location = new System.Drawing.Point(388, 38);
-            this.FractionsLabel.Name = "FractionsLabel";
-            this.FractionsLabel.Size = new System.Drawing.Size(351, 337);
-            this.FractionsLabel.TabIndex = 4;
+            this.InfoLabel.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.InfoLabel.Location = new System.Drawing.Point(388, 50);
+            this.InfoLabel.Name = "InfoLabel";
+            this.InfoLabel.Size = new System.Drawing.Size(351, 410);
+            this.InfoLabel.TabIndex = 7;
             // 
             // MainFormElipse
             // 
             this.MainFormElipse.TargetControl = this;
             // 
-            // AllFractionsTable
+            // QuestsListTable
             // 
-            this.AllFractionsTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.AllFractionsTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.AllFractionsTable.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.AllFractionsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.QuestsListTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.QuestsListTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.QuestsListTable.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.QuestsListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -66,13 +67,13 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AllFractionsTable.DefaultCellStyle = dataGridViewCellStyle1;
-            this.AllFractionsTable.Location = new System.Drawing.Point(12, 41);
-            this.AllFractionsTable.Name = "AllFractionsTable";
-            this.AllFractionsTable.ReadOnly = true;
-            this.AllFractionsTable.Size = new System.Drawing.Size(370, 172);
-            this.AllFractionsTable.TabIndex = 3;
-            this.AllFractionsTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
+            this.QuestsListTable.DefaultCellStyle = dataGridViewCellStyle1;
+            this.QuestsListTable.Location = new System.Drawing.Point(12, 50);
+            this.QuestsListTable.Name = "QuestsListTable";
+            this.QuestsListTable.ReadOnly = true;
+            this.QuestsListTable.Size = new System.Drawing.Size(370, 514);
+            this.QuestsListTable.TabIndex = 6;
+            this.QuestsListTable.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CellMouseClick);
             // 
             // CollapseButton
             // 
@@ -136,7 +137,7 @@
             this.CloseButton.Radius = 10;
             this.CloseButton.Size = new System.Drawing.Size(18, 17);
             this.CloseButton.TabIndex = 23;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click_1);
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // TopPanel
             // 
@@ -146,26 +147,34 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(751, 35);
-            this.TopPanel.TabIndex = 5;
+            this.TopPanel.Size = new System.Drawing.Size(761, 35);
+            this.TopPanel.TabIndex = 8;
             // 
             // TopPanelDragControl
             // 
             this.TopPanelDragControl.TargetControl = this.TopPanel;
             // 
-            // Fractions
+            // RewardLabel
+            // 
+            this.RewardLabel.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RewardLabel.Location = new System.Drawing.Point(388, 460);
+            this.RewardLabel.Name = "RewardLabel";
+            this.RewardLabel.Size = new System.Drawing.Size(351, 107);
+            this.RewardLabel.TabIndex = 9;
+            // 
+            // CompleteQuests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 223);
-            this.Controls.Add(this.FractionsLabel);
-            this.Controls.Add(this.AllFractionsTable);
+            this.ClientSize = new System.Drawing.Size(761, 576);
+            this.Controls.Add(this.RewardLabel);
+            this.Controls.Add(this.InfoLabel);
+            this.Controls.Add(this.QuestsListTable);
             this.Controls.Add(this.TopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Fractions";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fractions";
-            ((System.ComponentModel.ISupportInitialize)(this.AllFractionsTable)).EndInit();
+            this.Name = "CompleteQuests";
+            this.Text = "CompleteQuests";
+            ((System.ComponentModel.ISupportInitialize)(this.QuestsListTable)).EndInit();
             this.TopPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -173,12 +182,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label FractionsLabel;
+        private System.Windows.Forms.Label InfoLabel;
         private Guna.UI.WinForms.GunaElipse MainFormElipse;
-        private System.Windows.Forms.DataGridView AllFractionsTable;
+        private System.Windows.Forms.DataGridView QuestsListTable;
         private Guna.UI.WinForms.GunaAdvenceButton CollapseButton;
         private Guna.UI.WinForms.GunaAdvenceButton CloseButton;
         private System.Windows.Forms.Panel TopPanel;
         private Guna.UI.WinForms.GunaDragControl TopPanelDragControl;
+        private System.Windows.Forms.Label RewardLabel;
     }
 }

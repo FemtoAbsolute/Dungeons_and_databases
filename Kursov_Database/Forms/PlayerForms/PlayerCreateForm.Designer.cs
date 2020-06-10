@@ -50,6 +50,22 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.AppearenceCombobox = new System.Windows.Forms.ComboBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.ShowAllTalents = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ShowClassesButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ShowPerksButton = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ShowAllFractions = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ListCombobox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.PerksCombobox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ValueTextbox = new System.Windows.Forms.TextBox();
+            this.ResultLabel = new System.Windows.Forms.Label();
+            this.SearchResultLabel = new System.Windows.Forms.Label();
+            this.SearchButton = new Guna.UI.WinForms.GunaAdvenceButton();
             this.Shieldpicturebox = new System.Windows.Forms.PictureBox();
             this.Knifepicturebox = new System.Windows.Forms.PictureBox();
             this.HairPictureBox = new System.Windows.Forms.PictureBox();
@@ -64,6 +80,8 @@
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Shieldpicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Knifepicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HairPictureBox)).BeginInit();
@@ -303,13 +321,329 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.gunaAdvenceButton1);
+            this.groupBox8.Controls.Add(this.ShowAllTalents);
+            this.groupBox8.Controls.Add(this.ShowClassesButton);
+            this.groupBox8.Controls.Add(this.ShowPerksButton);
+            this.groupBox8.Controls.Add(this.ShowAllFractions);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox8.Location = new System.Drawing.Point(624, 45);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox8.Size = new System.Drawing.Size(317, 536);
+            this.groupBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox8.Size = new System.Drawing.Size(317, 184);
             this.groupBox8.TabIndex = 42;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Справочник";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.SearchResultLabel);
+            this.groupBox9.Controls.Add(this.SearchButton);
+            this.groupBox9.Controls.Add(this.ResultLabel);
+            this.groupBox9.Controls.Add(this.ValueTextbox);
+            this.groupBox9.Controls.Add(this.label4);
+            this.groupBox9.Controls.Add(this.PerksCombobox);
+            this.groupBox9.Controls.Add(this.label3);
+            this.groupBox9.Controls.Add(this.label2);
+            this.groupBox9.Controls.Add(this.ListCombobox);
+            this.groupBox9.Controls.Add(this.label1);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox9.Location = new System.Drawing.Point(624, 235);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox9.Size = new System.Drawing.Size(317, 348);
+            this.groupBox9.TabIndex = 43;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Поисковик";
+            // 
+            // ShowAllTalents
+            // 
+            this.ShowAllTalents.Animated = true;
+            this.ShowAllTalents.AnimationHoverSpeed = 0.07F;
+            this.ShowAllTalents.AnimationSpeed = 0.03F;
+            this.ShowAllTalents.BaseColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ShowAllTalents.BorderColor = System.Drawing.Color.Black;
+            this.ShowAllTalents.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.ShowAllTalents.CheckedBorderColor = System.Drawing.Color.Black;
+            this.ShowAllTalents.CheckedForeColor = System.Drawing.Color.White;
+            this.ShowAllTalents.CheckedImage = null;
+            this.ShowAllTalents.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.ShowAllTalents.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ShowAllTalents.FocusedColor = System.Drawing.Color.Empty;
+            this.ShowAllTalents.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowAllTalents.ForeColor = System.Drawing.Color.Black;
+            this.ShowAllTalents.Image = null;
+            this.ShowAllTalents.ImageSize = new System.Drawing.Size(20, 20);
+            this.ShowAllTalents.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowAllTalents.Location = new System.Drawing.Point(6, 111);
+            this.ShowAllTalents.Name = "ShowAllTalents";
+            this.ShowAllTalents.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.ShowAllTalents.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.ShowAllTalents.OnHoverForeColor = System.Drawing.Color.White;
+            this.ShowAllTalents.OnHoverImage = null;
+            this.ShowAllTalents.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowAllTalents.OnPressedColor = System.Drawing.Color.Black;
+            this.ShowAllTalents.Size = new System.Drawing.Size(305, 28);
+            this.ShowAllTalents.TabIndex = 17;
+            this.ShowAllTalents.Text = "Показать список талантов";
+            this.ShowAllTalents.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ShowAllTalents.Click += new System.EventHandler(this.ShowAllTalents_Click);
+            // 
+            // ShowClassesButton
+            // 
+            this.ShowClassesButton.Animated = true;
+            this.ShowClassesButton.AnimationHoverSpeed = 0.07F;
+            this.ShowClassesButton.AnimationSpeed = 0.03F;
+            this.ShowClassesButton.BaseColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ShowClassesButton.BorderColor = System.Drawing.Color.Black;
+            this.ShowClassesButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.ShowClassesButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.ShowClassesButton.CheckedForeColor = System.Drawing.Color.White;
+            this.ShowClassesButton.CheckedImage = null;
+            this.ShowClassesButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.ShowClassesButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ShowClassesButton.FocusedColor = System.Drawing.Color.Empty;
+            this.ShowClassesButton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowClassesButton.ForeColor = System.Drawing.Color.Black;
+            this.ShowClassesButton.Image = null;
+            this.ShowClassesButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.ShowClassesButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowClassesButton.Location = new System.Drawing.Point(6, 79);
+            this.ShowClassesButton.Name = "ShowClassesButton";
+            this.ShowClassesButton.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.ShowClassesButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.ShowClassesButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.ShowClassesButton.OnHoverImage = null;
+            this.ShowClassesButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowClassesButton.OnPressedColor = System.Drawing.Color.Black;
+            this.ShowClassesButton.Size = new System.Drawing.Size(305, 26);
+            this.ShowClassesButton.TabIndex = 18;
+            this.ShowClassesButton.Text = "Показать список классов";
+            this.ShowClassesButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ShowClassesButton.Click += new System.EventHandler(this.ShowClassesButton_Click);
+            // 
+            // ShowPerksButton
+            // 
+            this.ShowPerksButton.Animated = true;
+            this.ShowPerksButton.AnimationHoverSpeed = 0.07F;
+            this.ShowPerksButton.AnimationSpeed = 0.03F;
+            this.ShowPerksButton.BaseColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ShowPerksButton.BorderColor = System.Drawing.Color.Black;
+            this.ShowPerksButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.ShowPerksButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.ShowPerksButton.CheckedForeColor = System.Drawing.Color.White;
+            this.ShowPerksButton.CheckedImage = null;
+            this.ShowPerksButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.ShowPerksButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ShowPerksButton.FocusedColor = System.Drawing.Color.Empty;
+            this.ShowPerksButton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowPerksButton.ForeColor = System.Drawing.Color.Black;
+            this.ShowPerksButton.Image = null;
+            this.ShowPerksButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ShowPerksButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.ShowPerksButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowPerksButton.Location = new System.Drawing.Point(6, 19);
+            this.ShowPerksButton.Name = "ShowPerksButton";
+            this.ShowPerksButton.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.ShowPerksButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.ShowPerksButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.ShowPerksButton.OnHoverImage = null;
+            this.ShowPerksButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowPerksButton.OnPressedColor = System.Drawing.Color.Black;
+            this.ShowPerksButton.Size = new System.Drawing.Size(305, 24);
+            this.ShowPerksButton.TabIndex = 15;
+            this.ShowPerksButton.Text = "Показать список перков";
+            this.ShowPerksButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ShowPerksButton.Click += new System.EventHandler(this.ShowPerksButton_Click);
+            // 
+            // ShowAllFractions
+            // 
+            this.ShowAllFractions.Animated = true;
+            this.ShowAllFractions.AnimationHoverSpeed = 0.07F;
+            this.ShowAllFractions.AnimationSpeed = 0.03F;
+            this.ShowAllFractions.BaseColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ShowAllFractions.BorderColor = System.Drawing.Color.Black;
+            this.ShowAllFractions.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.ShowAllFractions.CheckedBorderColor = System.Drawing.Color.Black;
+            this.ShowAllFractions.CheckedForeColor = System.Drawing.Color.White;
+            this.ShowAllFractions.CheckedImage = null;
+            this.ShowAllFractions.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.ShowAllFractions.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ShowAllFractions.FocusedColor = System.Drawing.Color.Empty;
+            this.ShowAllFractions.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowAllFractions.ForeColor = System.Drawing.Color.Black;
+            this.ShowAllFractions.Image = null;
+            this.ShowAllFractions.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ShowAllFractions.ImageSize = new System.Drawing.Size(20, 20);
+            this.ShowAllFractions.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowAllFractions.Location = new System.Drawing.Point(6, 49);
+            this.ShowAllFractions.Name = "ShowAllFractions";
+            this.ShowAllFractions.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.ShowAllFractions.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.ShowAllFractions.OnHoverForeColor = System.Drawing.Color.White;
+            this.ShowAllFractions.OnHoverImage = null;
+            this.ShowAllFractions.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.ShowAllFractions.OnPressedColor = System.Drawing.Color.Black;
+            this.ShowAllFractions.Size = new System.Drawing.Size(305, 24);
+            this.ShowAllFractions.TabIndex = 16;
+            this.ShowAllFractions.Text = "Показать список фракций";
+            this.ShowAllFractions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ShowAllFractions.Click += new System.EventHandler(this.ShowAllFractions_Click);
+            // 
+            // gunaAdvenceButton1
+            // 
+            this.gunaAdvenceButton1.Animated = true;
+            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton1.BaseColor = System.Drawing.SystemColors.ActiveBorder;
+            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.CheckedImage = null;
+            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.Image = null;
+            this.gunaAdvenceButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(6, 145);
+            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
+            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton1.OnHoverImage = null;
+            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton1.Size = new System.Drawing.Size(305, 27);
+            this.gunaAdvenceButton1.TabIndex = 19;
+            this.gunaAdvenceButton1.Text = "Показать список профессий";
+            this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(6, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Показать список";
+            // 
+            // ListCombobox
+            // 
+            this.ListCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListCombobox.FormattingEnabled = true;
+            this.ListCombobox.Items.AddRange(new object[] {
+            "Талантов",
+            "Классов",
+            "Фракций"});
+            this.ListCombobox.Location = new System.Drawing.Point(149, 29);
+            this.ListCombobox.Name = "ListCombobox";
+            this.ListCombobox.Size = new System.Drawing.Size(150, 28);
+            this.ListCombobox.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(6, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "дающих бонус к";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(302, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = ",";
+            // 
+            // PerksCombobox
+            // 
+            this.PerksCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PerksCombobox.FormattingEnabled = true;
+            this.PerksCombobox.Items.AddRange(new object[] {
+            "Скорости",
+            "Здоровью",
+            "Интеллекту",
+            "Силе",
+            "Скрытности"});
+            this.PerksCombobox.Location = new System.Drawing.Point(149, 62);
+            this.PerksCombobox.Name = "PerksCombobox";
+            this.PerksCombobox.Size = new System.Drawing.Size(150, 28);
+            this.PerksCombobox.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(6, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 20);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "больше чем";
+            // 
+            // ValueTextbox
+            // 
+            this.ValueTextbox.Location = new System.Drawing.Point(113, 103);
+            this.ValueTextbox.Name = "ValueTextbox";
+            this.ValueTextbox.Size = new System.Drawing.Size(186, 26);
+            this.ValueTextbox.TabIndex = 6;
+            // 
+            // ResultLabel
+            // 
+            this.ResultLabel.Location = new System.Drawing.Point(7, 176);
+            this.ResultLabel.Name = "ResultLabel";
+            this.ResultLabel.Size = new System.Drawing.Size(303, 29);
+            this.ResultLabel.TabIndex = 7;
+            // 
+            // SearchResultLabel
+            // 
+            this.SearchResultLabel.Location = new System.Drawing.Point(7, 205);
+            this.SearchResultLabel.Name = "SearchResultLabel";
+            this.SearchResultLabel.Size = new System.Drawing.Size(304, 136);
+            this.SearchResultLabel.TabIndex = 49;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.AnimationHoverSpeed = 0.07F;
+            this.SearchButton.AnimationSpeed = 0.03F;
+            this.SearchButton.BaseColor = System.Drawing.Color.Silver;
+            this.SearchButton.BorderColor = System.Drawing.Color.Black;
+            this.SearchButton.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.SearchButton.CheckedBorderColor = System.Drawing.Color.Black;
+            this.SearchButton.CheckedForeColor = System.Drawing.Color.White;
+            this.SearchButton.CheckedImage = ((System.Drawing.Image)(resources.GetObject("SearchButton.CheckedImage")));
+            this.SearchButton.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.SearchButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.SearchButton.FocusedColor = System.Drawing.Color.Empty;
+            this.SearchButton.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchButton.ForeColor = System.Drawing.Color.Black;
+            this.SearchButton.Image = null;
+            this.SearchButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.SearchButton.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.SearchButton.Location = new System.Drawing.Point(7, 140);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.SearchButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.SearchButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.SearchButton.OnHoverImage = null;
+            this.SearchButton.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.SearchButton.OnPressedColor = System.Drawing.Color.Black;
+            this.SearchButton.Size = new System.Drawing.Size(296, 33);
+            this.SearchButton.TabIndex = 48;
+            this.SearchButton.Text = "Найти";
+            this.SearchButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // Shieldpicturebox
             // 
@@ -396,6 +730,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 592);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.Shieldpicturebox);
             this.Controls.Add(this.Knifepicturebox);
             this.Controls.Add(this.HairPictureBox);
@@ -418,6 +753,9 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Shieldpicturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Knifepicturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HairPictureBox)).EndInit();
@@ -455,5 +793,21 @@
         private System.Windows.Forms.PictureBox HairPictureBox;
         private System.Windows.Forms.PictureBox Shieldpicturebox;
         private System.Windows.Forms.PictureBox Knifepicturebox;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaAdvenceButton ShowAllTalents;
+        private Guna.UI.WinForms.GunaAdvenceButton ShowClassesButton;
+        private Guna.UI.WinForms.GunaAdvenceButton ShowPerksButton;
+        private Guna.UI.WinForms.GunaAdvenceButton ShowAllFractions;
+        private System.Windows.Forms.Label ResultLabel;
+        private System.Windows.Forms.TextBox ValueTextbox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox PerksCombobox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox ListCombobox;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaAdvenceButton SearchButton;
+        private System.Windows.Forms.Label SearchResultLabel;
     }
 }
